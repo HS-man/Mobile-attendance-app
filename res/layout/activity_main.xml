@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     tools:context="com.example.mobile_attendance_app.MainActivity" >
 
     <TextView
@@ -14,3 +15,49 @@
         android:text="@string/hello_world" />
 
 </RelativeLayout>
+=======
+    tools:context="com.example.mobile_attendance_app.MainActivity" 
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:textColor="@drawable/font_selector"
+            android:textSize="18dp"
+            android:text="我的课程" />
+
+        
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"
+            android:textColor="@drawable/font_selector"
+            android:text="个人" />
+    </RadioGroup>
+
+
+</RelativeLayout>
+>>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658
