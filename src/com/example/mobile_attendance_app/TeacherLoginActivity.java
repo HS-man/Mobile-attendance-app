@@ -24,7 +24,7 @@ public class TeacherLoginActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent =new  Intent(TeacherLoginActivity.this,MainActivity.class);
+				Intent intent =new  Intent(TeacherLoginActivity.this,Teacher_MainActivity.class);
 				startActivity(intent);
 			}
 		});

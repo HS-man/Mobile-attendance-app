@@ -12,39 +12,17 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-<<<<<<< HEAD
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-=======
         android:theme="@style/AppTheme">
         <activity 
             android:name=".StudentLoginActivity"
             android:label="@string/app_name"
             >
-            <intent-filter>
+             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
->>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
-            android:name=".Teacher_MainActivity"
-            android:label="@string/title_activity_teacher__main" >
-        </activity>
-        <activity
-            android:name=".Teacher_informationActivity"
-            android:label="@string/title_activity_teacher_information" >
-        </activity>
-        <activity
-            android:name=".Teacher_courseActivity"
-            android:label="@string/title_activity_teacher_course" >
-=======
             android:name=".MainActivity"
             android:label="@string/app_name" >
             
@@ -63,8 +41,23 @@
             android:name=".AbsentActivity"
             android:label="@string/app_name" >
             
->>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658
         </activity>
+        <activity
+            android:name=".Teacher_MainActivity"
+            android:label="@string/app_name" >
+           
+        </activity>
+        <activity
+            android:name=".Teacher_informationActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Teacher_courseActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+       
     </application>
 
 </manifest>

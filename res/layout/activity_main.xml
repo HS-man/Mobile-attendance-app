@@ -6,16 +6,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-<<<<<<< HEAD
-    tools:context="com.example.mobile_attendance_app.MainActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
-=======
     tools:context="com.example.mobile_attendance_app.MainActivity" 
     android:orientation="vertical">
 
@@ -60,4 +50,3 @@
 
 
 </RelativeLayout>
->>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658

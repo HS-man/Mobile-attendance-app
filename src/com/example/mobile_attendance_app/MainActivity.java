@@ -1,14 +1,6 @@
 package com.example.mobile_attendance_app;
 
 import android.app.Activity;
-<<<<<<< HEAD
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
-public class MainActivity extends Activity {
-
-=======
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -29,15 +21,10 @@ public class MainActivity extends Activity {
 	private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
     private RadioGroup radioGroup;
->>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-	}
-
-=======
 		fragmentManager = this.getFragmentManager();
         radioGroup = (RadioGroup)findViewById(R.id.radioGroup1);
         ((RadioButton)radioGroup.findViewById(R.id.radio0)).setChecked(true);
@@ -69,7 +56,6 @@ public class MainActivity extends Activity {
          
 	}
 	 
->>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

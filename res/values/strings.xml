@@ -2,16 +2,8 @@
 <resources>
 
     <string name="app_name">掌上签到系统</string>
-<<<<<<< HEAD
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="user">王老师</string>
-    <string name="title_activity_teacher__main">Teacher_MainActivity</string>
-    <string name="title_activity_teacher_information">Teacher_informationActivity</string>
-    <string name="title_activity_teacher_course">Teacher_courseActivity</string>
-=======
     <string name="hello_world">Hello world!</string><string name="action_settings">Settings</string>
+    <string name="user">陈老师</string>
     
->>>>>>> 3c3f61756e47aaaa1546bcac2f0bcb47d309f658
 
 </resources>
