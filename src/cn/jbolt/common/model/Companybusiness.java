@@ -18,4 +18,8 @@ public class Companybusiness extends BaseCompanybusiness<Companybusiness> {
 	public Page<Record> findByCompanyName(int page,String CompanyName){
 		return Db.paginate(page,9, "select *","from companybusiness where CompanyName like '%"+CompanyName+"%'");
 	}
+	
+	public Page<Record> findByShareholderName(int page,String ShareholderName){
+		return Db.paginate(page,9, "select *","from companybusiness where shareholders like '%"+ShareholderName+"%'");
+	}
 }
