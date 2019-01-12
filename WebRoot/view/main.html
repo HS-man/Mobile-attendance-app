@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>印尼企业查</title>
+<link rel="stylesheet" href="css1.css" type="text/css" />
+<script type="text/javascript" src="method.js"></script>
+<script type="text/javascript" src="jquery-form.js"></script>
+</head>
+<body>
+<div class="text-center">
+<div class="home-title" style="text-align:center">
+    印尼企业查
+ </div>
+<div class="tab-main">
+	<div>
+    	<div class="item js-tab active" id="js-company" onclick="CompanySearch()">
+        	<div class="top">
+            	<span>查企业</span>
+            </div>
+        </div>
+    	<div class="item js-tab" id="js-human"  onclick="HumanSearch()">
+        	<div class="top">
+            	<span>查高管</span>
+            </div>
+        </div>
+    	<div class="item" tab="js-relation" tyc-event-click tyc-event-ch="shouye.RelationSearch.Tab">
+        	<div class="top">
+            	<span>查关系</span>
+            </div>
+        </div>
+    </div>
+</div>
+	<div class="mt10 js-search-container" id="input-company">
+    	<div class="input-group home-group">
+    		<form id="CompanyForm"  action="Search" method="post">
+            	<div class="live-search-wrap -index">
+                	<input type="search" id="home-main-search" class="input -hg js-live-search-auto"  maxlength="50" name="companybusiness.CompanyName" placeholder="请输入企业名称" />
+                	<input value="搜索" class="input-group-btn btn -hg" type="submit">
+					<ul class="live-search-content hidden"></ul>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <div class="mt10 hidden js-search-container" id="input-human">
+    	<div class="input-group home-group">
+    		<form autocomplete="off">
+            	<div class="live-search-wrap -index">
+                	<input type="search" id="home-human-search" class="input -hg js-live-search-auto" wrap-class="-index" livesearch-is-human="true" maxlength="50" click-selected="header.suggestToHuman" placeholder="请输入高管姓名" />
+					<ul class="live-search-content hidden"></ul>
+                </div>
+            </form>
+            <div class="input-group-btn btn -hg" id="search-human"tyc-event-click tyc-event-ch="shouye.HumanSearch.Search">
+            <span>搜索</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+Table: companybusiness
+-----------------------------+--------------+------+-----+---------+---------
+ Field                       | Type         | Null | Key | Default | Remarks 
+-----------------------------+--------------+------+-----+---------+---------
+ CompanyId                   | INT(10)      | NO   | PRI |         |         
+ Country                     | VARCHAR(255) | YES  |     |         |         
+ CompanyName                 | VARCHAR(255) | YES  |     |         |         
+ Industry                    | VARCHAR(255) | YES  |     |         |         
+ City                        | VARCHAR(255) | YES  |     |         |         
+ StateCounty                 | VARCHAR(255) | YES  |     |         |         
+ KeyExecutives               | TEXT(65535)  | YES  |     |         |         
+ NumberOfEmployees           | VARCHAR(255) | YES  |     |         |         
+ EmployeeReferenceDate       | VARCHAR(255) | YES  |     |         |         
+ FinancialAuditors           | VARCHAR(255) | YES  |     |         |         
+ LegalForm                   | VARCHAR(255) | YES  |     |         |         
+ ListedUnlisted              | VARCHAR(255) | YES  |     |         |         
+ OperationalStatus           | VARCHAR(255) | YES  |     |         |         
+ ISIN                        | VARCHAR(255) | YES  |     |         |         
+ NationalFiscalIDs           | VARCHAR(255) | YES  |     |         |         
+ Shareholders                | TEXT(65535)  | YES  |     |         |         
+ MainProducts                | TEXT(65535)  | YES  |     |         |         
+ PostalCode                  | VARCHAR(255) | YES  |     |         |         
+ Address                     | VARCHAR(255) | YES  |     |         |         
+ Phone                       | VARCHAR(255) | YES  |     |         |         
+ Fax                         | VARCHAR(255) | YES  |     |         |         
+ Email                       | VARCHAR(255) | YES  |     |         |         
+ Website                     | VARCHAR(255) | YES  |     |         |         
+ AddressType                 | VARCHAR(255) | YES  |     |         |         
+ BusinessDescriptionProducts | TEXT(65535)  | YES  |     |         |         
+ Import                      | VARCHAR(255) | YES  |     |         |         
+ Export                      | VARCHAR(255) | YES  |     |         |         
+ IncorporationDate           | VARCHAR(255) | YES  |     |         |         
+ Source                      | VARCHAR(255) | YES  |     |         |         
+ EMISID                      | VARCHAR(255) | YES  |     |         |         
+ Totaloperatingrevenue       | VARCHAR(255) | YES  |     |         |         
+ FiscalYear                  | VARCHAR(255) | YES  |     |         |         
+ Audited                     | VARCHAR(255) | YES  |     |         |         
+ Consolidated                | VARCHAR(255) | YES  |     |         |         
+ F35                         | VARCHAR(255) | YES  |     |         |         
+-----------------------------+--------------+------+-----+---------+---------
+
+Table: deals
+------------------+--------------+------+-----+---------+---------
+ Field            | Type         | Null | Key | Default | Remarks 
+------------------+--------------+------+-----+---------+---------
+ DealID           | VARCHAR(255) | NO   | PRI |         |         
+ Date             | VARCHAR(255) | YES  |     |         |         
+ CountryOfTarget  | VARCHAR(255) | YES  |     |         |         
+ TargetCompany    | VARCHAR(255) | YES  |     |         |         
+ DealType         | VARCHAR(255) | YES  |     |         |         
+ Buyer            | VARCHAR(255) | YES  |     |         |         
+ CountryOfBuyer   | VARCHAR(255) | YES  |     |         |         
+ Seller           | VARCHAR(255) | YES  |     |         |         
+ MainIndustries   | VARCHAR(255) | YES  |     |         |         
+ DealValueUSD(mn) | VARCHAR(255) | YES  |     |         |         
+ DealValueSource  | VARCHAR(255) | YES  |     |         |         
+ StakePercent     | VARCHAR(255) | YES  |     |         |         
+ Comments         | TEXT(65535)  | YES  |     |         |         
+------------------+--------------+------+-----+---------+---------
+
+Table: relation
+--------+--------------+------+-----+---------+---------
+ Field  | Type         | Null | Key | Default | Remarks 
+--------+--------------+------+-----+---------+---------
+ ﻿id1   | VARCHAR(255) | NO   | PRI |         |         
+ id2    | VARCHAR(255) | NO   | PRI |         |         
+ weight | VARCHAR(255) | YES  |     |         |         
+--------+--------------+------+-----+---------+---------
+

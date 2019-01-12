@@ -1,0 +1,94 @@
+@charset "utf-8";
+body{
+	font-family:"微软雅黑";
+	font-size:12pt;	
+	background: #0CF;
+}
+
+div {
+    display: block;
+}
+.home-title {
+    display: inline-block;
+    margin-bottom: 45px;
+    margin-top:5px;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 6px;
+    text-indent: 7px;
+    color: #fff;
+}
+.text-center {
+	text-align: center;
+}
+.tab-main {
+    text-align: center;
+    color: #fff;
+	
+}
+.tab-main .item {
+    display: inline-block;
+    padding: 3px 6px;
+    line-height: 1.42857143;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tab-main .active.item {
+	/* Visual */
+	color: #0084ff;
+	background-color: #fff;
+}
+.mt10{
+	margin-top: 10px;
+	
+}
+.hidden {
+    display: none;
+}
+
+.home-group .input {
+	width: 640px;
+	border-color: transparent;
+	line-height: 24px;
+	font-size: 16px;
+	padding: 5px 25px 5px 15px;
+	vertical-align: middle;
+}
+
+.home-group .input-group-btn {
+	width: 100px;
+	border-left-color: #e0e0e0;
+	color: #0084ff;
+}
+.home-group .input-group-btn:hover {
+	border-color: #0084ff;
+	background-color: #0084ff;
+	color: #fff;
+}
+
+
+.btn {
+	/* Box model */
+	display: inline-block;
+	padding: 2px 12px;
+	border: 1px solid #f3f3f3;
+	border-radius: 2px;
+	margin-top: 10px;
+	/* Typographic */
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	font-weight: normal;
+	/* Visual */
+	background-color: #fff;
+	color: #202020;
+	/* Other */
+	cursor: pointer;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.result-list {
+	background-color: #ffffff;
+}
