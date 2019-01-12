@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/c"
     tools:context="com.example.mobile_attendance_app.Teacher_informationActivity" >
 
     <GridLayout
@@ -27,16 +28,7 @@
             android:text="@string/app_name"
             android:textSize="22dp" />
 
-        <TextView
-            android:id="@+id/TextView05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_gravity="right|top"
-            android:layout_row="0"
-            android:layout_weight="0.06"
-            android:text="@string/user"
-            android:textSize="18dp" />
+        
     </GridLayout>
 
     <LinearLayout
@@ -106,10 +98,10 @@
             android:id="@+id/TextView03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="年龄" />
+            android:text="邮箱" />
 
         <EditText
-            android:id="@+id/teacher_age"
+            android:id="@+id/teacher_email"
             android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -131,6 +123,27 @@
             android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00" >
+
+        <Button
+            android:id="@+id/teacher_modify"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="修改" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返回" />
+
     </LinearLayout>
 
 </LinearLayout>

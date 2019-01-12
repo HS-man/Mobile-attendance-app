@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,17 +22,25 @@ public class MainActivity extends Activity {
 	private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
     private RadioGroup radioGroup;
+    String username,request,result,password;
+    Bundle bundle;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Intent intent=getIntent();
+		bundle=intent.getBundleExtra("bundle");
+		username=bundle.getString("username");
 		fragmentManager = this.getFragmentManager();
         radioGroup = (RadioGroup)findViewById(R.id.radioGroup1);
         ((RadioButton)radioGroup.findViewById(R.id.radio0)).setChecked(true);
         transaction = fragmentManager.beginTransaction();
         Fragment fragment = new CourseFragment();
+        fragment.setArguments(bundle);
         transaction.replace(R.id.content, fragment);
         transaction.commit();
+        Log.d("start","启动homeFragment"); 
+        Log.d("username",username); 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -39,12 +48,14 @@ public class MainActivity extends Activity {
 				case R.id.radio0:
 					transaction = fragmentManager.beginTransaction();
 	                Fragment homeFragment = new CourseFragment();
+	                homeFragment.setArguments(bundle);
 	                transaction.replace(R.id.content, homeFragment);
 	                transaction.commit();
 					break;
 				case R.id.radio1:
 					transaction = fragmentManager.beginTransaction();
 	                Fragment sortFragment = new PersonFragment();
+	                sortFragment.setArguments(bundle);
 	                transaction.replace(R.id.content, sortFragment);
 	                transaction.commit();
 					break;
@@ -53,25 +64,6 @@ public class MainActivity extends Activity {
                 
             }
         });
-         
 	}
-	 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+	
 }

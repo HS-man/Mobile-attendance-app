@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/c"
     tools:context="com.example.mobile_attendance_app.Teacher_MainActivity" >
 
     <GridLayout
@@ -27,28 +28,24 @@
             android:text="@string/app_name"
             android:textSize="22dp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_gravity="right|top"
-            android:layout_row="0"
-            android:layout_weight="0.06"
-            android:text="@string/user"
-            android:textSize="18dp" />
+        
 
     </GridLayout>
 
     <GridView
         android:id="@+id/teacher_mainGridView1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="350dp"
         android:gravity="center"
         android:numColumns="2"
         android:stretchMode="columnWidth" >
-
     </GridView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:text="退出" />
 
 </LinearLayout>

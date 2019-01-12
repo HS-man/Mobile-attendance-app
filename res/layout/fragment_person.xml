@@ -17,11 +17,11 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/student_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="张三"
+            android:text=""
             android:ems="10" />
     </LinearLayout>
     <LinearLayout
@@ -37,11 +37,11 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/student_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="20151002387"
+            android:text=""
             android:ems="10" />
     </LinearLayout>
     
@@ -58,11 +58,11 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/student_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="13534226768"
+            android:text=""
             android:ems="10" />
     </LinearLayout>
     <LinearLayout
@@ -78,11 +78,11 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/student_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="hitpower@qq.com"
+            android:text=""
             android:ems="10" />
     </LinearLayout>
     <LinearLayout
@@ -98,10 +98,10 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/student_academy"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
-            android:text="信息学院"
+            android:text=""
             android:ems="10" />
     </LinearLayout>
     <LinearLayout
@@ -117,10 +117,10 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/student_class"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
-            android:text="计科1502"
+            android:text=""
             android:ems="10" />
     </LinearLayout>
    
@@ -137,6 +137,15 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:text="退出登录" />
+
+        <Button
+            android:id="@+id/modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="修改" />
+
     </RelativeLayout>
 
 </LinearLayout>

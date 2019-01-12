@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bj"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -11,19 +12,19 @@
         >
 
         <RadioGroup
-            android:id="@+id/radioGroup1"
+            android:id="@+id/rg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <RadioButton
-                android:id="@+id/radio0"
+                android:id="@+id/student"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="我是学生" />
 
             <RadioButton
-                android:id="@+id/radio1"
+                android:id="@+id/teacher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 
@@ -47,7 +48,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -66,7 +67,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -85,7 +86,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -104,7 +105,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -123,7 +124,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -142,7 +143,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/academy"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:ems="10" />
@@ -156,11 +157,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="班级："
+            android:text="班级：(学生)"
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/classname"
             android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:ems="10" />
