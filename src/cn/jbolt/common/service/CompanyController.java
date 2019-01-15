@@ -42,24 +42,6 @@ public class CompanyController extends Controller {
 		render("company_list.jsp");
 	}
 	
-	@ActionKey("search2") 
-	public void search2(){
-		Integer pageNumber=getParaToInt("pageNumber");
-		System.out.println(pageNumber);
-		if(pageNumber==null){
-			pageNumber=1;
-		}
-		String ShareholderName = getPara("HumanName");//获取输入框数据
-		Page<Record> list=Companybusiness.dao.findByShareholderName(pageNumber,ShareholderName);
-		totalPgae=list.getTotalPage(); 
-		total=list.getTotalRow();	   
-		currentPage=pageNumber;
-		setAttr("totalPgae", totalPgae);
-		setAttr("pageNumber", list.getPageNumber());
-		setAttr("Shareholder", list.getList());
-		setAttr("ShareholderName", ShareholderName);
-		render("shareholder_list.jsp");
-	}
 	@ActionKey("pre") 
 	public void PrePage(){
 		if(currentPage==1){	
