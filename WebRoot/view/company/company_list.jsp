@@ -52,6 +52,7 @@ tr {
 	line-height: 42px;
 	color: #fff;
 	background-color: #408ec9;
+	
 }
 
 .table-body {
@@ -106,7 +107,30 @@ ul li{ float:left; margin-left:20px; list-style-type:none;}
 	padding: 5px 25px 5px 15px;
 	vertical-align: middle;
 }
-
+.btn {
+	/* Box model */
+	display: inline-block;
+	padding: 2px 12px;
+	border: 1px solid #f3f3f3;
+	border-radius: 2px;
+	/* Typographic */
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	font-weight: normal;
+	/* Visual */
+	background-color: #fff;
+	color: #202020;
+	/* Other */
+	cursor: pointer;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.input-group-btn{
+	border-color: #0084ff;
+	background-color: #0084ff;
+	color: #fff;
+}
 </style>
 <script type="text/javascript">
 
@@ -116,26 +140,31 @@ ul li{ float:left; margin-left:20px; list-style-type:none;}
 <body>
 <div class="table-inner">
         <div class="table-head">
-            <table>
-                <thead>
-                    <tr>
-                        <th>企业名称</th>
-                        <th>行业</th>
-                        <th>所处城市</th>
-                    </tr>
-                </thead>
-            </table>
+        
+           <span>为你查找到#(totolRecord)家公司</span>
+           
         </div>
         <div class="table-body">
             <table width="130">
+            	<thead>
+                	<tr>
+                	<td>企业名称</td>
+                    <td>城市</td>
+                    <td>省份</td>
+                </tr>
+                </thead>
                 <tbody id="tbody">
                 #for(x:Company)
                 <tr>
-                    <td>#(x.CompanyName)</td>
-                    <td>#(x.Industry)</td>
+                	<td>#(x.CompanyName)</td>
                     <td>#(x.City)</td>
+                    <td>#(x.StateCounty)</td>
+                    <td><form id="DetailForm" action="detail" method="post">	
+                    <input type="text" hidden="true" name="company" value="#(x.CompanyName)" />
+                	<input type="submit" value="详细" class="input-group-btn btn -hg"></form></td>
                 </tr>
                 #end
+                
                 </tbody>
             </table>
   		</div>
@@ -151,9 +180,11 @@ ul li{ float:left; margin-left:20px; list-style-type:none;}
             <li><form id="JumpPage" action="jump" method="post">
                 <input type="search" class="input -hg js-live-search-auto"  maxlength="4" name="pageNumber" value="" />
                 <input type="submit" value="跳转" class="input-group-btn btn -hg" /></form></li>
-                
+            <li><form id="returnForm" action="main" method="post">	
+                	<input type="submit" value="返回" class="input-group-btn btn -hg" style="float:right" ></form></li>
             </ul>
         </div>
 </div>
+
 </body>
 </html>

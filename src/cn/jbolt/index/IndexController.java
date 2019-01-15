@@ -13,10 +13,12 @@ public class IndexController extends Controller {
 	/**
 	 * 首页Action
 	 */
+	
 	public void index() {
         render("main.jsp");
 		
 	}
+	@ActionKey("main") 
 	public void test(){
     	render("main.jsp");
     }

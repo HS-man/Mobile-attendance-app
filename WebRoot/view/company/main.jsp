@@ -177,7 +177,7 @@ div {
 					<ul class="live-search-content hidden"></ul>
                 </div>
             </form>
-            <div class="input-group-btn btn -hg" id="search-human"tyc-event-click tyc-event-ch="shouye.HumanSearch.Search">
+            <div class="input-group-btn btn -hg" id="search-human"s>
             <span>搜索</span>
             </div>
         </div>
