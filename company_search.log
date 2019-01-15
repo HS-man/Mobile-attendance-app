@@ -9797,6 +9797,7 @@ java.lang.NullPointerException
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
 	at java.lang.Thread.run(Unknown Source)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 2019-01-12 23:06:16
 [ERROR]-[Thread: qtp670576685-17]-[com.jfinal.core.ActionHandler.handle()]: /detail
@@ -11178,5 +11179,7 @@ java.lang.NullPointerException
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
 	at java.lang.Thread.run(Unknown Source)
+=======
+>>>>>>> parent of fb46b8d... search shareholder
 =======
 >>>>>>> parent of fb46b8d... search shareholder

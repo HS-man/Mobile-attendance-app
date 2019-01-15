@@ -19,6 +19,7 @@ public class Companybusiness extends BaseCompanybusiness<Companybusiness> {
 		return Db.paginate(page,9, "select *","from companybusiness where CompanyName like '%"+CompanyName+"%'");
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public Record findall(String CompanyName){
 		return Db.findFirst("select * from companybusiness where CompanyName='"+CompanyName+"'");
 	}
@@ -43,6 +44,8 @@ public class Companybusiness extends BaseCompanybusiness<Companybusiness> {
 		return Db.paginate(page,9, "select *",sql);
 		
 	}
+=======
+>>>>>>> parent of fb46b8d... search shareholder
 =======
 >>>>>>> parent of fb46b8d... search shareholder
 }
